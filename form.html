@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<title>Aftermath</title>
+	<style type="text/css">
+@font-face {
+		src: url("#")
+	}
+		body {
+		    background: #F8F8F8; 
+			background-size: cover;
+			margin: 0px;
+			color: #FFFFFF;
+			/*for the nav bar*/
+		}
+		/*start of nav*/
+		header {
+		    height: 13%;
+			background: #009FFF;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			display: block;
+			border-radius: 0px;
+			padding-left: 13px;
+		}
+		footer {
+			background: #009FFF;
+			position: relative;
+			margin-top: 4px;
+			margin-left: 4px;
+			margin-right: 4px;
+			margin-bottom: 14px;
+			display: block;
+			border-radius: 15px;
+	
+			padding-top: 4px;
+			padding-bottom: 4px;
+		}
+		footer div {
+			text-align: center;
+
+		}
+		footer div p {
+			font-weight: bold;
+			font-size: 0.8em;
+		}
+		        }
+        nav {
+            margin-left: 4%;
+            float: center;
+            margin-top: 4%;
+            text-align: center;
+            margin-bottom: 4%;
+        }
+        nav a {
+
+            margin-left: 5%;
+            margin-right: 5%;
+            text-decoration: none;
+            margin-bottom: 9%;
+        }
+
+		#navLiPseudo {}
+		/*end of nav*/
+		.logo {
+			display: inline-block;
+		}
+		#mainconz {
+			margin-left: 300px;
+		}
+		#mainconz i {
+
+		}
+		#formDiv {
+			background: #009FFF;
+			margin-top: 200px;
+			margin-left: 90px;
+			margin-right: 90px;
+			margin-bottom: 150px;
+			text-align: center;
+			/*shifts the form t the center*/
+			border: 1px solid #FFFFFF;
+			border-radius: 6px;
+		}
+
+		form {
+		    background: #FEFEFE;
+
+			padding-bottom: 4px;
+			padding-top: 19px;
+		}
+		.inputDiv {
+			display: block;
+			margin-bottom: 20px;
+			text-align: center;
+			padding-top: 8px;
+			padding-left:
+			border-radius: 3px;
+		}
+
+		.formLabel {
+			display: block;
+			text-align: left;
+			color: #009FFF;
+
+			font-weight: bold;
+			/* makes the label to ne untop of the input*/
+		}
+		input {
+			background: #FFFFFF;
+			border: 1px solid;
+			border-radius: 10px;
+
+		}
+		input {
+			background: white;
+			border: 2px solid #C7C7C7;
+			border-radius: 3px;
+		}
+		button {
+			font-weight: bold;
+
+
+		}
+		#formButtonPseudo {}
+		a {
+			font-weight: bold;
+			text-decoration: none;
+			color: ;
+		}
+
+		#replyP {
+			font-weight: bold;
+			margin-left: 13px;
+			margin-right: 13px;
+		}
+		.replyDivo {
+			background: white;
+			position: relative;
+			margin-top: 4px;
+			margin-left: 4px;
+			margin-right: 4px;
+			margin-bottom: 14px;
+			display: block;
+			border-radius: 15px;
+
+			padding-top: 4px;
+			padding-bottom: 4px;
+
+
+
+		}
+		.required {
+			background: red;
+			position: relative;
+			margin-top: 4px;
+			margin-left: 4px;
+			margin-right: 4px;
+			margin-bottom: 14px;
+			display: block;
+			border-radius: 0px;
+			padding-top: 4px;
+			padding-bottom: 4px;
+
+
+		}
+		h2 {
+
+			padding-top: 70px;
+		}
+		#footDiv {
+			padding-bottom: 23px;
+			display: block;
+			font-weight: bold;
+		}
+		.footElements {
+			display: inline-block;
+			text-align: center;
+			margin-left: 30px;
+			background: #FFFFFF;
+			border: 1px solid #FFFFFF;
+
+		}
+		hr {
+			
+			margin: 0px;
+			border: 4px solid white;
+		}
+		/*styles*/
+	</style>
+</head>
+<body>
+	<header>
+		<div>
+			<h1 class="logo">karogram</h1>
+			<span id="mainconz"><i class="logo">#</i>
+				<i class="logo">#</i>
+			</span>
+		</div>
+		<hr style="box-shadow 0px 0px 0px; border: 0px">
+		
+	    <nav style="margin-left: 17%">
+            <a href="#">hom</a>
+            <a href="#">mes</a>
+            <a href="#">fri</a>
+            <a href="#">noy</a>
+            <a href="#">set</a>
+        </nav>
+
+</header>
+
+<main>
+	<div id="formDiv">
+		<h2 style="padding-top: 0px">Login</h2>
+		<form method="POST" action="#">
+
+			<div class="inputDiv">
+				<label style="text-align: center;" class="formLabel" for="firstName">First Name:</label>
+				<input placeholder="                    Mark..." name="firstName" id="firstName" type="text">
+			</div>
+			<hr>
+			<div class="inputDiv">
+				<label style="text-align: center;" class="formLabel" for="lastName">Last Name:</label>
+				<input placeholder="                 Freesbie..."name="lastName" id="lastName" type="text">
+			</div>
+			
+			<div class="inputDiv">
+				<label style="text-align: center;" class="formLabel" for="dateOfBirth">D.O.B:</label>
+				<input name="dateOfBirth" id="dateOfBirth" type="date">
+			</div>
+	
+
+
+
+
+			<div style="padding-top: 9px; display: block; margin-bottom: 30px; color: white">
+
+
+				<span style="display: inline-block">
+					<label for="male"><b>Male</b></label>
+					<input checked value="male" name="gender" id="male" type="radio">
+				</span>
+
+				<span style="display: inline-block">
+					<label for="Female"><b>Female</b></label>
+					<input value="Female" name="gender" id="Female" type="radio">
+				</span>
+			</div>
+
+
+
+
+
+
+			
+			<div class="inputDiv">
+				<label style="text-align: center;"class="formLabel" for="tel">Tel:</label>
+				<input placeholder="              1234-567-8910" id="tel" type="tel" maxlength="11" minlength="11" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}">
+			</div>
+			
+			<div class="inputDiv">
+				<label style="text-align: center" class="formLabel" for="email">Email:</label>
+				<input placeholder="     markfreesbie@gmail.com"id="email" type="email">
+			</div>
+	
+			<div style="padding-top: 9px; display: block; margin-bottom: 30px; color: white">
+
+				<span style="display: inline-block">
+					<label for="verve"><i>#</i></label>
+					<input checked value="verve" name="formOfPaymemt" id="verve" type="radio">
+				</span>
+
+				<span style="display: inline-block">
+					<label for="visa"><i>#</i></label>
+					<input value="visa" name="formOfPaymemt" id="visa" type="radio">
+				</span>
+
+				<span style="display: inline-block">
+					<label for="masterCard"><i>#</i></label>
+					<input value="masterCard" name="formOfPaymemt" id="masterCard" type="radio">
+				</span>
+			</div>
+			
+			<div class="inputDiv">
+				<h3 style="font-weight: bold; color: white" id="submitH3"></h3>
+				<button id="button" value="submitted" type="submit">Submit</button>
+			</div>
+					<div id="requiredDiv">
+			<p id="requiredP"></p>
+		</div>
+
+		</form>
+		<div id="footDiv">
+			<button style="background: white; border: 1px solid white" class="footElements">
+				<a href="#">Can't find my account</a>
+			</button>
+			<button class="footElements"><a href="#">Sign up</a></button>
+		</div>
+	</div>
+	<div id="replyDiv">
+		<p style="color: #009FFF" id="replyP"></p>
+	</div>
+</main>
+
+<footer>
+	<div>
+		<p>
+			&copy; <a style="color: blue"href="#">OborOgheneneKparobor</a>
+		</p>
+		<p>
+			<a style="color: blue" href="#">web: www.demo.com</a>
+		</p>
+		<p>
+			phone: 09083048547
+		</p>
+		<p>
+			<a style="color: blue" href="#">corp.karo</a>
+		</p>
+	</div>
+</footer>
+</body>
+<script>
+//script
+console.log("INTERFACE");
+//inputs
+var firstName = document.querySelector("#firstName")
+firstName.addEventListener('click', changeBorder1)
+
+function changeBorder1() {
+firstName.classList.add("formInputPesudo")
+
+
+}
+var lastName = document.querySelector("#lastName")
+lastName.addEventListener('click', changeBorder2)
+
+function changeBorder2() {
+lastName.classList.add("formInputPesudo")
+
+
+}
+var dateOfBirth = document.querySelector("#dateOfBirth")
+dateOfBirth.addEventListener('click', changeBorder3)
+
+function changeBorder3() {
+dateOfBirth.classList.add("formInputPesudo")
+
+
+}
+var tel = document.querySelector("#tel")
+tel.addEventListener('click', changeBorder4)
+
+function changeBorder4() {
+tel.classList.add("formInputPesudo")
+
+
+}
+var email = document.querySelector("#email")
+email.addEventListener('click', changeBorder5)
+
+function changeBorder5() {
+email.classList.add("formInputPesudo")
+
+
+}
+//inputs
+
+//Submit
+var button = document.querySelector("#button")
+button.addEventListener('click', inputReply)
+
+
+function inputReply(e) {
+e.preventDefault()
+if (document.querySelector('#firstName').value === '' || document.querySelector('#email').value === '') {
+const requiredP = document.querySelector('#requiredP').innerHTML = "Input required fields"
+const requiredDiv = document.querySelector("#requiredDiv")
+requiredDiv.classList.add('required')
+
+} else {
+requiredP.remove()
+requiredDiv.remove()
+const firstNameVal = firstName.value
+const emailVal = email.value
+const replyDiv = document.querySelector('#replyDiv')
+const replyContent = document.querySelector('#replyP').innerHTML = `Hello ${firstNameVal} with email of ${emailVal}. Thanks for submitting this retrival. Now you can have access to all our services. Now you can shop for you dream accessories. Just for assurance.....`
+console.log(replyContent)
+console.log("Success")
+replyDiv.classList.add('replyDivo')
+
+setTimeout(() =>document.querySelector("#firstName").value = '', 300)
+setTimeout(() =>document.querySelector("#lastName").value = '', 300)
+setTimeout(() =>document.querySelector("#tel").value = '', 300)
+setTimeout(() =>document.querySelector("#email").value = '', 300)
+setTimeout(() =>document.querySelector("#dateOfBirth").value = '', 300)
+setTimeout(() =>document.querySelector("#button").remove(), 300)
+setTimeout(() =>document.querySelector('#submitH3').innerHTML = "Succeess", 300)
+}
+
+}
+//Submit
+</script>
+</html>
