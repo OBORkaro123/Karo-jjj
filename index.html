@@ -1,76 +1,118 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Karogram's Space Runner</title>
-  <style>
-body {
-  background-color: #000;
-}
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--for viewport to be portable for all devices-->
+	<title>binary</title>
 
-#game-canvas {
-  border: 1px solid #fff;
-    }
-    </style>
-</head>
-<body>
-  <canvas id="game-canvas" width="800" height="600"></canvas>
-  
-</body>
-  <script> 
-// Game variables
-let canvas, ctx, player, obstacles, score;
-// Initialize game
-function init() {
-  canvas = document.getElementById('game-canvas');
-  ctx = canvas.getContext('2d');
-  player = { x: 100, y: 100, speed: 5 };
-  obstacles = [];
-  score = 0;
-}
+	; <body style="background: #D7D7D7;text-align: center">
+		<header style="background: #2105FF">
+			<h1>Binary Convertor</h1>
+		</header>
+		<form style="margin-top: 60px" action="#" method="get">
+			<h1><b>Input Number</b></h1>
+			<input style="border: 3px solid #2105FF; border-radius: 5px" type="number" name="" id="input" required />
+			<button id="submit" ontype="submit">submit</button>
+		</form>
+		<div style="text-align: centerwidth: 580px; display: block; background: red" id="div">
 
-// Game loop
-function update() {
-  // Update player position
-  player.x += player.speed;
-  
-  // Generate obstacles
-  if (Math.random() < 0.1) {
-    obstacles.push({ x: canvas.width, y: Math.random() * canvas.height });
-  }
-  
-  // Check collisions
-  for (let i = 0; i < obstacles.length; i++) {
-    if (checkCollision(player, obstacles[i])) {
-      alert('Game Over!');
-      init();
-    }
-  }
-  
-  // Draw everything
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.fillStyle = '#fff';
-  ctx.fillRect(player.x, player.y, 50, 50);
-  for (let i = 0; i < obstacles.length; i++) {
-    ctx.fillRect(obstacles[i].x, obstacles[i].y, 50, 50);
-  }
-  
-  // Update score
-  score++;
-  document.title = `Karogram's Space Runner - Score: ${score}`;
-  
-  requestAnimationFrame(update);
-}
+		</div>
+		<footer style="margin-top: 60px">
+			<div>
+				<p>
+					&copy; <a style="color: blue"href="#">OborOgheneneKparobor</a>
+				</p>
+				<p>
+					<a style="color: blue" href="#">web: www.demo.com</a>
+				</p>
+				<p>
+					phone: 07083607439
+				</p>
+				<p>
+					<a style="color: blue" href="#">corp.karo</a>
+				</p>
+			</div>
+		</footer>
+	</body>
+	<script>
+		//for binary
+		var button = document.querySelector('#submit');
+		var input = document.querySelector('#input');
+		var note = 0;
+		var div = document.querySelector('#div');
+		var breakInto = "";
+		var additionalDisplay1 = "";
+		var additionalDisplay2 = "";
+		input.addEventListener('click', ref)
 
-// Check collision between player and obstacle
-function checkCollision(player, obstacle) {
-  return (player.x + 50 > obstacle.x &&
-          player.x < obstacle.x + 50 &&
-          player.y + 50 > obstacle.y &&
-          player.y < obstacle.y + 50);
-}
 
-init();
-update();
-</script>
-  </html>
+		button.addEventListener('click', binary);
+
+		function binary(o) {
+			//history
+
+			note += 1;
+			console.log(" "); //for spacing
+			console.log('Recents', note);
+
+			//calculator
+
+			o.preventDefault();
+
+			var ri = 0
+			var dide = document.querySelector('#input').value;
+			var a = [""]
+			if (dide == 0) {
+				div.style.background = "#D7D7D7"
+			}//so only red when answer pops up
+			while (dide > 0) {
+				/*this means that only when data is inputed before it is displayed*/
+				additionalDisplay1 = `<sub style="color: blue">2</sub>&nbsp;<i style="color: #30700C;display: inline">Ans</i>`
+				additionalDisplay2 = `=`
+				div.style.background = "red"
+				//main algorithm
+				var bt = dide%2;
+				a[ri] = bt
+				ri++
+				suba = dide-bt;
+				sub = suba / 2;
+				dide = sub;
+				// main algorithm
+			}
+			var decoy = 0
+			while (decoy = a.length) {
+				breakInto = breakInto+`${a.pop()}`
+				decoy++
+
+			}
+
+			console.log(input.value, "-", breakInto)
+			div.innerHTML = `<p style= "color: blue; font-weight: bold;">${input.value} &nbsp; ${additionalDisplay2} &nbsp;&nbsp;${breakInto} ${additionalDisplay1}</p>`
+			//    the timer clears the breakInto after loading them at the page
+			//Timer
+			setTimeout(()=> {
+				input.value = ""
+				breakInto = ""
+				additionalDisplay1 = ""
+				additionalDisplay2 = ""
+			}, 0.00001) //To increase the speed in case a computer is directly using it..
+		}
+
+
+		//When you click the input button
+		function ref() {
+			input.style.border = "2px solid red"
+			setTimeout(()=> {}, 100)
+
+		}
+
+
+
+
+
+
+
+
+	</script>
+</html>
