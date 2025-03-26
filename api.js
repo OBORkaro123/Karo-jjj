@@ -10,7 +10,7 @@ async function fetchForexUpdates() {
     let updates = `<p>Base: ${data.base}</p>`;
     updates += "<ul>";
     for (const [currency, rate] of Object.entries(data.rates)) {
-      updates += `<li style= "text-align: center; font-size: 15px; font-weight: bold">${currency}: ${rate}</li>`;
+      updates += `<li style= "text-align: center; font-size: 15px; font-weight: bold; font-size:18px ;">${currency}: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;        ${rate}</li>`;
     }
     updates += "</ul>";
     document.getElementById("updates").innerHTML = updates;
