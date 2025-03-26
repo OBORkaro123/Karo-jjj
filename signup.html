@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Forex Broker</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="trend.html">Trends</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li><a href="activity.html">Activity</a></li>
+      </ul>
+    </nav>
+    <section>
+      <h2>Create an Account</h2>
+  <form id="signup-form">
+    <input type="text" id="name" placeholder="Full Name" required />
+    <input type="text" id="phone" placeholder="Phone Number" required />
+    <select id="sex">
+      <option value="" disabled selected>Sex</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select><br>
+    <input
+      type="text"
+      id="nationality"
+      placeholder="Nationality"
+      required
+    />
+    <input type="text" id="id" placeholder="ID Number" required /><br>
+    <input type="number" id="age" placeholder="Age" required /><br>
+    <input type="password" id="password" placeholder="Password" required />
+   <br> <button type="submit">Sign Up</button><br>
+  </form>
+      <p>Already have an account? <a href="account.html" style="color: black">Login here</a></p>
+          <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 CTP.fx Forex Broker. All rights reserved.</p>
+    </footer>
+
+    </section>
+    <script src="js/signup.js"></script>
+  </body>
+</html>
